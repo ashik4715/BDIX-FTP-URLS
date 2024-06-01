@@ -845,7 +845,7 @@
             const tableBody = $('#urlTableBody');
             urlToChecks.forEach((url, index) => {
                 const status = validUrls[index] ? 'Valid' : '404 Error';
-                const row = `<tr><td><a href="${url}">${url} target="_blank"</a></td><td>${status}</td></tr>`;
+                const row = `<tr><td><a href="${url}" target="_blank">${url}</a></td><td>${status}</td></tr>`;
                 tableBody.append(row);
             });
         }
